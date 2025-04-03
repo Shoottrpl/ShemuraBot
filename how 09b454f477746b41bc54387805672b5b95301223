@@ -1,0 +1,88 @@
+4a0f5fc1 2025-04-03 | Initial commit [Shoottrpl]
+
+[1mdiff --git a/.env b/.env[m
+[1mnew file mode 100644[m
+[1mindex 00000000..e4459387[m
+[1m--- /dev/null[m
+[1m+++ b/.env[m
+[36m@@ -0,0 +1,12 @@[m
+[32m+[m[32mAPI_ID=21513912[m
+[32m+[m[32mAPI_HASH=3acac9a4abb1ea13b90d1cac09c1b771[m
+[32m+[m[32mBOT_TOKEN=8016886103:AAEJoEs6peSUSa14TnuOhjGzJmM_J0Udq9k[m
+[32m+[m[32mLOGGER_ID=1016483633[m
+[32m+[m[32mCRYPT_KEY=gpV0VLvvzcbMh5ADMnJUXNFmHD3XIdgZbHs3D5abEhg=[m
+[32m+[m
+[32m+[m[32mGIT_REP = "Shoottrpl/ShemuraBot"[m
+[32m+[m
+[32m+[m[32mCELERY_BROKER_URL="redis://redis:6379/0"[m
+[32m+[m
+[32m+[m[32mPORT=5000[m
+[32m+[m[32mSECRET_KEY=4716ca8a47d4a3ae2314d0f70ea89d5d2e7b02f0655dc08cf763d4d9528434c7[m
+[1mdiff --git a/.idea/.gitignore b/.idea/.gitignore[m
+[1mnew file mode 100644[m
+[1mindex 00000000..26d33521[m
+[1m--- /dev/null[m
+[1m+++ b/.idea/.gitignore[m
+[36m@@ -0,0 +1,3 @@[m
+[32m+[m[32m# Default ignored files[m
+[32m+[m[32m/shelf/[m
+[32m+[m[32m/workspace.xml[m
+[1mdiff --git a/.idea/ReputationBot.iml b/.idea/ReputationBot.iml[m
+[1mnew file mode 100644[m
+[1mindex 00000000..4a7d01c0[m
+[1m--- /dev/null[m
+[1m+++ b/.idea/ReputationBot.iml[m
+[36m@@ -0,0 +1,11 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<module type="PYTHON_MODULE" version="4">[m
+[32m+[m[32m  <component name="NewModuleRootManager">[m
+[32m+[m[32m    <content url="file://$MODULE_DIR$">[m
+[32m+[m[32m      <excludeFolder url="file://$MODULE_DIR$/.venv" />[m
+[32m+[m[32m      <excludeFolder url="file://$MODULE_DIR$/.venv1" />[m
+[32m+[m[32m    </content>[m
+[32m+[m[32m    <orderEntry type="jdk" jdkName="Python 3.10 virtualenv at ~/ReputationBot/bot/bot_venv" jdkType="Python SDK" />[m
+[32m+[m[32m    <orderEntry type="sourceFolder" forTests="false" />[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m</module>[m
+\ No newline at end of file[m
+[1mdiff --git a/.idea/codeStyles/codeStyleConfig.xml b/.idea/codeStyles/codeStyleConfig.xml[m
+[1mnew file mode 100644[m
+[1mindex 00000000..a55e7a17[m
+[1m--- /dev/null[m
+[1m+++ b/.idea/codeStyles/codeStyleConfig.xml[m
+[36m@@ -0,0 +1,5 @@[m
+[32m+[m[32m<component name="ProjectCodeStyleConfiguration">[m
+[32m+[m[32m  <state>[m
+[32m+[m[32m    <option name="PREFERRED_PROJECT_CODE_STYLE" value="Default" />[m
+[32m+[m[32m  </state>[m
+[32m+[m[32m</component>[m
+\ No newline at end of file[m
+[1mdiff --git a/.idea/inspectionProfiles/Project_Default.xml b/.idea/inspectionProfiles/Project_Default.xml[m
+[1mnew file mode 100644[m
+[1mindex 00000000..09a94752[m
+[1m--- /dev/null[m
+[1m+++ b/.idea/inspectionProfiles/Project_Default.xml[m
+[36m@@ -0,0 +1,20 @@[m
+[32m+[m[32m<component name="InspectionProjectProfileManager">[m
+[32m+[m[32m  <profile version="1.0">[m
+[32m+[m[32m    <option name="myName" value="Project Default" />[m
+[32m+[m[32m    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">[m
+[32m+[m[32m      <option name="ignoredErrors">[m
+[32m+[m[32m        <list>[m
+[32m+[m[32m          <option value="N802" />[m
+[32m+[m[32m        </list>[m
+[32m+[m[32m      </option>[m
+[32m+[m[32m    </inspection_tool>[m
+[32m+[m[32m    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">[m
+[32m+[m[32m      <option name="ignoredIdentifiers">[m
+[32m+[m[32m        <list>[m
+[32m+[m[32m          <option value="employee_tree.app.managment.commands.seed_data.*" />[m
+[32m+[m[32m        </list>[m
+[32m+[m[32m      </option>[m
+[32m+[m[32m    </inspection_tool>[m
+[32m+[m[32m    <inspection_tool class="TaskProblemsInspection" enabled="true" level="ERROR" enabled_by_default="true" editorAttributes="ERRORS_ATTRIBUTES" />[m
+[32m+[m[32m  </profile>[m
+[32m+[m[32m</component>[m
+\ No newline at end of file[m
+[1mdiff --git a/.idea/inspectionProfiles/profiles_settings.xml b/.idea/inspectionProfiles/profiles_settings.xml[m
+

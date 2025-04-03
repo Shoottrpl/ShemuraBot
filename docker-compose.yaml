@@ -1,0 +1,53 @@
+services:
+  web:
+    build:
+      context: ./flask_app
+      dockerfile: Dockerfile
+    environment:
+      - SECRET_KEY=${SECRET_KEY}
+      - PORT=${PORT}
+    volumes:
+      - ./flask_app:/app
+    ports:
+      - 5000:5000
+    depends_on:
+      - redis
+
+  redis:
+    image: redis
+    ports:
+      - 6379:6379
+    volumes:
+      - redis_data:/data
+
+  celery:
+    build:
+      context: ./flask_app
+      dockerfile: Dockerfile
+    environment:
+      - CELERY_BROKER_URL=${CELERY_BROKER_URL}
+    command: celery -A task worker --loglevel=info
+    volumes:
+      - ./flask_app:/app
+    depends_on:
+      - redis
+
+  bot:
+    build:
+      context: ./bot
+      dockerfile: Dockerfile
+    environment:
+      - CRYPT_KEY=${CRYPT_KEY}
+      - API_ID=${API_ID}
+      - API_HASH=${API_HASH}
+      - BOT_TOKEN=${BOT_TOKEN}
+      - LOGGER_ID=${LOGGER_ID}
+      - GIT_REP=${GIT_REP}
+    volumes:
+      - ./bot:/app/bot
+    depends_on:
+      - redis
+
+volumes:
+  redis_data:
+
